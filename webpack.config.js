@@ -26,7 +26,7 @@ module.exports = {
         new webpack.optimize.CommonsChunkPlugin('common.js'),
 
         ////单独使用link标签加载css并设置路径，相对于output配置中的publickPath
-        new ExtractTextPlugin('css/[name].css'),
+        new ExtractTextPlugin('[name].css'),
 
         new webpack.ProvidePlugin({
             $: "jquery",
@@ -53,6 +53,6 @@ module.exports = {
         }]
     },
     resolve: {
-        extension: ['', '.js', '.json', '.scss']
+        extension: ['', '.js', '.json',  '.scss']
     }
 }
