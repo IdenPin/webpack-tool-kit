@@ -1,0 +1,10 @@
+@charset "UTF-8";
+@import "../common/_variable";
+
+body{
+  background: $bgColor;
+  h1{
+    color: $darkFont;
+    font-size: 50px;
+  }
+}
